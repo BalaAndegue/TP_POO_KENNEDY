@@ -23,10 +23,10 @@ public class MainAPP extends Application {
 
         String defaultstyle = "-fx-background-color: #4285F4;"+
         "-fx-text-fill: white;"+
-                "-fx-background-radius: : 40;"+
+                "-fx-background-radius: 40;"+
                 "-fx-cursor: hand;"+
-                "-fx-pref-height :40;"+
-                "-fx-pref-width :120;";
+                "-fx-pref-height: 40;"+
+                "-fx-pref-width: 120;";
 
         // Charger l'image
         Image logo = new Image(getClass().getResource("/com/example/tp_poo2/image/logos.png").toExternalForm());

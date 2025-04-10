@@ -14,6 +14,16 @@ public class RegistrationController {
     public static void showRegistrationWindow() {
         Stage registrationStage = new Stage();
 
+        String defaultstyle =
+
+
+                "-fx-cursor: hand;"+
+                "-fx-pref-height :30;"+
+                "-fx-pref-width :220;"+
+                "-fx-border-radius: 35;"+
+                        "-fx-background-radius: 35;"+
+                        "-fx-padding: 5;";
+
         // Création du GridPane
         GridPane registrationLayout = new GridPane();
         registrationLayout.setHgap(10); // Espacement horizontal entre les colonnes
@@ -24,35 +34,43 @@ public class RegistrationController {
         Label firstNameLabel = new Label("Prénom :");
         TextField firstNameField = new TextField();
         firstNameField.setPromptText("Entrez votre prénom");
+        firstNameField.setStyle(defaultstyle);
 
         Label lastNameLabel = new Label("Nom :");
         TextField lastNameField = new TextField();
         lastNameField.setPromptText("Entrez votre nom");
+        lastNameField.setStyle(defaultstyle);
 
         Label birthDateLabel = new Label("Date de naissance :");
         TextField birthDateField = new TextField();
         birthDateField.setPromptText("JJ/MM/AAAA");
+        birthDateField.setStyle(defaultstyle);
 
 
         Label genderLabel = new Label("Sexe :");
         ComboBox<String> genderComboBox = new ComboBox<>();
         genderComboBox.getItems().addAll("M", "F");
+        genderComboBox.setStyle(defaultstyle);
 
         Label cityLabel = new Label("Ville :");
         TextField cityField = new TextField();
         cityField.setPromptText("Entrez votre ville");
+        cityField.setStyle(defaultstyle);
 
         Label neighborhoodLabel = new Label("Quartier :");
         TextField neighborhoodField = new TextField();
         neighborhoodField.setPromptText("Entrez votre quartier");
+        neighborhoodField.setStyle(defaultstyle);
 
         Label usernameLabel = new Label("Nom d'utilisateur :");
         TextField usernameField = new TextField();
         usernameField.setPromptText("Entrez votre nom d'utilisateur");
+        usernameField.setStyle(defaultstyle);
 
         Label passwordLabel = new Label("Mot de passe :");
         PasswordField passwordField = new PasswordField();
         passwordField.setPromptText("Entrez votre mot de passe");
+        passwordField.setStyle(defaultstyle);
 
         // Bouton d'inscription
         Button registerButton = new Button("S'inscrire");
